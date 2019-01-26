@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -9,14 +10,33 @@
     <link rel="stylesheet" href="resources/material-design-lite/material.css" />
     <script src="resources/material-design-lite/material.js"></script>
     <style>
-        .center{text-align:center;padding:10px;}
-        .mdl-card{cursor:pointer;color:#ffffff;height:250px;background-size: cover;}
-        .mdl-card__title-text{color:#ffffff;background-color:rgba(0,0,0,0.5);padding:15px;
-            position:absolute;left:0;bottom:0;width:100%;box-sizing: border-box;}
+        .center {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .mdl-card {
+            cursor: pointer;
+            color: #ffffff;
+            height: 250px;
+            background-size: cover;
+        }
+
+        .mdl-card__title-text {
+            color: #ffffff;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
     </style>
 
     <title>Car Deals</title>
 </head>
+
 <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header">
@@ -25,7 +45,7 @@
                 <div class="mdl-layout-spacer"></div>
                 <nav class="mdl-navigation">
                     <button class="mdl-button--raised mdl-button--accent mdl-button mdl-js-button mdl-js-ripple-effect"
-                            onclick="location.reload()">
+                        onclick="location.reload()">
                         Refresh
                     </button>
                 </nav>
@@ -44,8 +64,7 @@
                 <!--Dynamic Data here-->
             </div>
             <div class="center">
-                <button onclick="pageEvents.loadMore()"
-                        class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+                <button onclick="pageEvents.loadMore()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
                     Show More
                 </button>
             </div>
@@ -53,4 +72,5 @@
     </div>
 
 </body>
+
 </html>
